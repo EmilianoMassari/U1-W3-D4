@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tombola Interattiva</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body>
+    <div id="contenitore">
+      <h1>Tombola Interattiva</h1>
+
+      <label for="numeroTabelline">Numero di tabelline:</label>
+      <input type="number" id="numeroTabelline" min="1" max="5" value="1" />
+      <button onclick="generaTabelline()">Genera Tabelline</button>
+
+      <h2>Tabellone</h2>
+      <div id="tabellone"></div>
+
+      <h2>Tabelline Giocatore</h2>
+      <div id="tabellineGiocatore"></div>
+
+      <button onclick="estraiNumero()">Estrai Numero</button>
+      <p id="numeroEstratto"></p>
+    </div>
+
+    <script src="/scripts/script.js"></script>
+  </body>
+</html>

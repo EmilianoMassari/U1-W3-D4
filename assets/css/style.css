@@ -1,0 +1,112 @@
+#tabellone,
+.tabellina {
+  display: grid;
+  grid-template-columns: repeat(10, 50px);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.cella {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border: 2px solid black;
+  font-size: 18px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.cella:hover {
+  transform: scale(1.05);
+  background-color: #d3e0ff;
+  cursor: pointer;
+}
+.estratto {
+  background-color: #5952dd;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0px 0px 10px rgba(89, 82, 221, 0.8);
+}
+
+body {
+  background: #665eff;
+  background: linear-gradient(
+    148deg,
+    rgba(102, 94, 255, 1) 0%,
+    rgba(0, 0, 0, 1) 98%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center; /* centra orizzontalmente */
+  align-items: center; /* centra verticalmente */
+  flex-direction: column;
+  text-align: center;
+}
+
+#contenitore {
+  background-color: white;
+  border-radius: 20px;
+  padding: 2px 30px 0px 30px;
+  box-shadow: 8px 8px 8px #5952dd;
+}
+
+h1 {
+  text-align: center;
+}
+
+button {
+  width: 135px;
+  height: 52px;
+  cursor: pointer;
+  border-radius: 20px;
+  color: aliceblue;
+  background-color: #0047ab;
+  border: none;
+  font-size: 0.9rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #003b8f;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+input {
+  all: unset;
+  padding: 15px;
+  border-radius: 12px;
+  border: 2px solid transparent;
+  box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.088);
+  transition: border 0.3s ease-in-out;
+  margin-bottom: 20px;
+}
+
+input:focus {
+  border-color: #0047ab;
+}
+
+input::placeholder {
+  font-size: 0.9rem;
+  font-family: "Segoe UI", sans-serif;
+  text-align: left;
+}
+
+div#contenitore label {
+  font-family: "Segoe UI", sans-serif;
+  font-weight: bold;
+}
+
+p {
+  font-family: "Segoe UI", sans-serif;
+  font-weight: bold;
+}
